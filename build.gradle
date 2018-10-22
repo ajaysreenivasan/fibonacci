@@ -1,0 +1,18 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+mainClassName = 'fibonacci.Fibonacci'
+
+jar {
+	manifest {
+		attributes(
+			'Main-Class' : 'fibonacci.Fibonacci'	
+		)
+	}
+
+	baseName = 'fibonacci'
+	version = '1.0.0'
+
+}
